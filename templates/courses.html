@@ -1,0 +1,392 @@
+{% extends "base.html" %}
+{% block title %}Courses &mdash; Aruvon Learning Solutions{% endblock %}
+{% block description %}18 industry-aligned skill development courses across Biosciences, Engineering, and Software domains, plus placement and corporate training programs.{% endblock %}
+{% block content %}
+
+<section class="page-hero">
+  <div class="wrap">
+    <p class="eyebrow">Course Catalog</p>
+    <h1>18 industry-aligned programs across three domains.</h1>
+    <p class="lead">Selected from our full portfolio of 30+ courses. Every program is built around current recruiter expectations, runs 15&ndash;45 days to fit within a semester, and is priced per student &mdash; ready to slot into your college's placement training calendar.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="domain-tabs reveal">
+      <button class="domain-tab active" data-domain="all">All Domains</button>
+      <button class="domain-tab" data-domain="biosciences">Biosciences</button>
+      <button class="domain-tab" data-domain="engineering">Engineering & Technology</button>
+      <button class="domain-tab" data-domain="software">Software</button>
+    </div>
+
+    <div class="domain-block" data-domain="biosciences">
+      <div class="domain-head">
+        <h3>Biosciences, Biotechnology & Biomedical</h3>
+        <p>Bridging life sciences with computation, genomics, and AI-driven research</p>
+      </div>
+      <div class="course-grid">
+      <div class="course-card">
+        <div class="course-card-top">
+          <h4>Bioinformatics & Computational Biology</h4>
+          <span class="duration-badge">30 Days</span>
+        </div>
+        <p class="objective">Build skills to analyze biological data using computational tools and public databases.</p>
+        <div class="label">Course Outcome</div>
+        <ul><li>Perform sequence alignment and analysis</li>
+<li>Use NCBI and Ensembl databases</li>
+<li>Apply computational biology tools</li></ul>
+        <p class="application">Careers in genomics companies, research labs, and biotech R&D divisions.</p>
+        <div class="course-card-foot">
+          <div class="course-price">Rs. 7,999<span>per student</span></div>
+          <a class="btn btn-ghost btn-sm-link" href="{{ url_for('contact') }}" style="font-size:12.5px;padding:8px 14px;">Enquire</a>
+        </div>
+      </div>
+      <div class="course-card">
+        <div class="course-card-top">
+          <h4>Genomics & Transcriptomics</h4>
+          <span class="duration-badge">30 Days</span>
+        </div>
+        <p class="objective">Train students in genome and gene-expression analysis using modern sequencing technologies.</p>
+        <div class="label">Course Outcome</div>
+        <ul><li>Analyze genomic and transcriptomic datasets</li>
+<li>Interpret gene expression patterns</li>
+<li>Use standard bioinformatics pipelines</li></ul>
+        <p class="application">Roles in genomics labs, diagnostic companies, and precision medicine research.</p>
+        <div class="course-card-foot">
+          <div class="course-price">Rs. 7,999<span>per student</span></div>
+          <a class="btn btn-ghost btn-sm-link" href="{{ url_for('contact') }}" style="font-size:12.5px;padding:8px 14px;">Enquire</a>
+        </div>
+      </div>
+      <div class="course-card">
+        <div class="course-card-top">
+          <h4>NGS Data Analysis</h4>
+          <span class="duration-badge">30 Days</span>
+        </div>
+        <p class="objective">Develop competency in processing and interpreting Next-Generation Sequencing data.</p>
+        <div class="label">Course Outcome</div>
+        <ul><li>Perform NGS quality control and alignment</li>
+<li>Conduct variant calling and annotation</li>
+<li>Use NGS analysis pipelines</li></ul>
+        <p class="application">High demand in genomics companies, diagnostic labs, and research institutions.</p>
+        <div class="course-card-foot">
+          <div class="course-price">Rs. 7,999<span>per student</span></div>
+          <a class="btn btn-ghost btn-sm-link" href="{{ url_for('contact') }}" style="font-size:12.5px;padding:8px 14px;">Enquire</a>
+        </div>
+      </div>
+      <div class="course-card">
+        <div class="course-card-top">
+          <h4>Machine Learning for Biotechnology</h4>
+          <span class="duration-badge">30 Days</span>
+        </div>
+        <p class="objective">Apply machine learning algorithms to solve biological and biomedical data problems.</p>
+        <div class="label">Course Outcome</div>
+        <ul><li>Build predictive biological models</li>
+<li>Apply ML techniques to omics data</li>
+<li>Evaluate and validate model performance</li></ul>
+        <p class="application">Careers at the intersection of biotech and data science in research and industry.</p>
+        <div class="course-card-foot">
+          <div class="course-price">Rs. 7,999<span>per student</span></div>
+          <a class="btn btn-ghost btn-sm-link" href="{{ url_for('contact') }}" style="font-size:12.5px;padding:8px 14px;">Enquire</a>
+        </div>
+      </div>
+      <div class="course-card">
+        <div class="course-card-top">
+          <h4>Medical Image Analysis using AI</h4>
+          <span class="duration-badge">30 Days</span>
+        </div>
+        <p class="objective">Train students to apply AI and deep learning for analyzing medical images and diagnostics.</p>
+        <div class="label">Course Outcome</div>
+        <ul><li>Build image classification models</li>
+<li>Apply CNNs to medical scans</li>
+<li>Support diagnostic AI systems</li></ul>
+        <p class="application">Roles in medical imaging companies, hospitals, and healthcare AI startups.</p>
+        <div class="course-card-foot">
+          <div class="course-price">Rs. 7,999<span>per student</span></div>
+          <a class="btn btn-ghost btn-sm-link" href="{{ url_for('contact') }}" style="font-size:12.5px;padding:8px 14px;">Enquire</a>
+        </div>
+      </div>
+      <div class="course-card">
+        <div class="course-card-top">
+          <h4>Bioprocess Engineering & Fermentation</h4>
+          <span class="duration-badge">30 Days</span>
+        </div>
+        <p class="objective">Introduce principles of large-scale bioprocessing, fermentation, and bioproduct manufacturing.</p>
+        <div class="label">Course Outcome</div>
+        <ul><li>Design fermentation processes</li>
+<li>Monitor bioreactor parameters</li>
+<li>Apply downstream processing techniques</li></ul>
+        <p class="application">Careers in biopharma manufacturing, industrial biotechnology, and bioprocess industries.</p>
+        <div class="course-card-foot">
+          <div class="course-price">Rs. 7,999<span>per student</span></div>
+          <a class="btn btn-ghost btn-sm-link" href="{{ url_for('contact') }}" style="font-size:12.5px;padding:8px 14px;">Enquire</a>
+        </div>
+      </div>
+      </div>
+    </div>
+
+    <div class="domain-block" data-domain="engineering">
+      <div class="domain-head">
+        <h3>Engineering & Technology</h3>
+        <p>Hands-on, industry-4.0 skills for core engineering graduates</p>
+      </div>
+      <div class="course-grid">
+      <div class="course-card">
+        <div class="course-card-top">
+          <h4>IoT & Embedded Systems</h4>
+          <span class="duration-badge">30 Days</span>
+        </div>
+        <p class="objective">Train students to design and program connected embedded devices and IoT systems.</p>
+        <div class="label">Course Outcome</div>
+        <ul><li>Program microcontrollers (Arduino/ESP32)</li>
+<li>Build IoT sensor networks</li>
+<li>Integrate cloud connectivity</li></ul>
+        <p class="application">Careers in smart devices, industrial automation, and IoT product companies.</p>
+        <div class="course-card-foot">
+          <div class="course-price">Rs. 7,999<span>per student</span></div>
+          <a class="btn btn-ghost btn-sm-link" href="{{ url_for('contact') }}" style="font-size:12.5px;padding:8px 14px;">Enquire</a>
+        </div>
+      </div>
+      <div class="course-card">
+        <div class="course-card-top">
+          <h4>Robotics & Automation</h4>
+          <span class="duration-badge">30 Days</span>
+        </div>
+        <p class="objective">Build hands-on skills in robotic system design, control logic, and industrial automation.</p>
+        <div class="label">Course Outcome</div>
+        <ul><li>Design robotic control systems</li>
+<li>Program automation logic (PLC)</li>
+<li>Apply sensor integration techniques</li></ul>
+        <p class="application">Roles in manufacturing automation, robotics companies, and industrial engineering.</p>
+        <div class="course-card-foot">
+          <div class="course-price">Rs. 7,999<span>per student</span></div>
+          <a class="btn btn-ghost btn-sm-link" href="{{ url_for('contact') }}" style="font-size:12.5px;padding:8px 14px;">Enquire</a>
+        </div>
+      </div>
+      <div class="course-card">
+        <div class="course-card-top">
+          <h4>CAD/CAE & Engineering Simulation</h4>
+          <span class="duration-badge">30 Days</span>
+        </div>
+        <p class="objective">Develop proficiency in computer-aided design and simulation tools for engineering analysis.</p>
+        <div class="label">Course Outcome</div>
+        <ul><li>Model 3D designs using CAD</li>
+<li>Run simulations with CAE/FEA</li>
+<li>Validate and refine engineering designs</li></ul>
+        <p class="application">Careers in product design, manufacturing, and mechanical or civil engineering firms.</p>
+        <div class="course-card-foot">
+          <div class="course-price">Rs. 7,999<span>per student</span></div>
+          <a class="btn btn-ghost btn-sm-link" href="{{ url_for('contact') }}" style="font-size:12.5px;padding:8px 14px;">Enquire</a>
+        </div>
+      </div>
+      <div class="course-card">
+        <div class="course-card-top">
+          <h4>Digital Twin & Industry 4.0</h4>
+          <span class="duration-badge">30 Days</span>
+        </div>
+        <p class="objective">Introduce digital twin concepts and smart manufacturing practices under Industry 4.0.</p>
+        <div class="label">Course Outcome</div>
+        <ul><li>Build digital twin models</li>
+<li>Apply Industry 4.0 frameworks</li>
+<li>Integrate IoT with manufacturing systems</li></ul>
+        <p class="application">Emerging roles in smart factories, manufacturing tech, and industrial IoT companies.</p>
+        <div class="course-card-foot">
+          <div class="course-price">Rs. 7,999<span>per student</span></div>
+          <a class="btn btn-ghost btn-sm-link" href="{{ url_for('contact') }}" style="font-size:12.5px;padding:8px 14px;">Enquire</a>
+        </div>
+      </div>
+      <div class="course-card">
+        <div class="course-card-top">
+          <h4>MATLAB for Engineering Applications</h4>
+          <span class="duration-badge">20 Days</span>
+        </div>
+        <p class="objective">Train students in MATLAB for engineering computation, modeling, and simulation.</p>
+        <div class="label">Course Outcome</div>
+        <ul><li>Write MATLAB scripts and functions</li>
+<li>Model engineering systems</li>
+<li>Analyze and visualize simulation results</li></ul>
+        <p class="application">Applicable across mechanical, electrical, and control engineering roles in industry.</p>
+        <div class="course-card-foot">
+          <div class="course-price">Rs. 7,999<span>per student</span></div>
+          <a class="btn btn-ghost btn-sm-link" href="{{ url_for('contact') }}" style="font-size:12.5px;padding:8px 14px;">Enquire</a>
+        </div>
+      </div>
+      <div class="course-card">
+        <div class="course-card-top">
+          <h4>AI for Engineering Applications</h4>
+          <span class="duration-badge">30 Days</span>
+        </div>
+        <p class="objective">Apply AI and machine learning techniques to solve real-world engineering problems.</p>
+        <div class="label">Course Outcome</div>
+        <ul><li>Apply ML to engineering data</li>
+<li>Build predictive maintenance models</li>
+<li>Automate engineering workflows</li></ul>
+        <p class="application">Growing demand in smart manufacturing, predictive maintenance, and engineering analytics.</p>
+        <div class="course-card-foot">
+          <div class="course-price">Rs. 7,999<span>per student</span></div>
+          <a class="btn btn-ghost btn-sm-link" href="{{ url_for('contact') }}" style="font-size:12.5px;padding:8px 14px;">Enquire</a>
+        </div>
+      </div>
+      </div>
+    </div>
+
+    <div class="domain-block" data-domain="software">
+      <div class="domain-head">
+        <h3>Software, IT & Digital Skills</h3>
+        <p>Core and emerging technology skills for placement-ready graduates</p>
+      </div>
+      <div class="course-grid">
+      <div class="course-card">
+        <div class="course-card-top">
+          <h4>Full Stack Development</h4>
+          <span class="duration-badge">45 Days</span>
+        </div>
+        <p class="objective">Train students to build complete web applications spanning frontend, backend, and database layers.</p>
+        <div class="label">Course Outcome</div>
+        <ul><li>Build responsive frontend interfaces</li>
+<li>Develop backend APIs</li>
+<li>Integrate and manage databases end-to-end</li></ul>
+        <p class="application">One of the highest-demand IT roles across startups, product, and service companies.</p>
+        <div class="course-card-foot">
+          <div class="course-price">Rs. 7,999<span>per student</span></div>
+          <a class="btn btn-ghost btn-sm-link" href="{{ url_for('contact') }}" style="font-size:12.5px;padding:8px 14px;">Enquire</a>
+        </div>
+      </div>
+      <div class="course-card">
+        <div class="course-card-top">
+          <h4>Data Science</h4>
+          <span class="duration-badge">40 Days</span>
+        </div>
+        <p class="objective">Equip students with statistical analysis, data wrangling, and visualization skills for data-driven decisions.</p>
+        <div class="label">Course Outcome</div>
+        <ul><li>Analyze and clean real-world datasets</li>
+<li>Build predictive models</li>
+<li>Visualize insights using Power BI/Tableau</li></ul>
+        <p class="application">Careers as Data Analysts and Data Scientists across IT, finance, retail, and healthcare.</p>
+        <div class="course-card-foot">
+          <div class="course-price">Rs. 7,999<span>per student</span></div>
+          <a class="btn btn-ghost btn-sm-link" href="{{ url_for('contact') }}" style="font-size:12.5px;padding:8px 14px;">Enquire</a>
+        </div>
+      </div>
+      <div class="course-card">
+        <div class="course-card-top">
+          <h4>Generative AI</h4>
+          <span class="duration-badge">20 Days</span>
+        </div>
+        <p class="objective">Train students in generative AI concepts, prompt engineering, and building AI-powered applications.</p>
+        <div class="label">Course Outcome</div>
+        <ul><li>Apply prompt engineering techniques</li>
+<li>Build applications using generative AI</li>
+<li>Use LLM APIs effectively</li></ul>
+        <p class="application">Fast-growing roles in AI application development across every industry vertical.</p>
+        <div class="course-card-foot">
+          <div class="course-price">Rs. 7,999<span>per student</span></div>
+          <a class="btn btn-ghost btn-sm-link" href="{{ url_for('contact') }}" style="font-size:12.5px;padding:8px 14px;">Enquire</a>
+        </div>
+      </div>
+      <div class="course-card">
+        <div class="course-card-top">
+          <h4>Cybersecurity</h4>
+          <span class="duration-badge">30 Days</span>
+        </div>
+        <p class="objective">Build foundational and applied skills in protecting systems, networks, and data from threats.</p>
+        <div class="label">Course Outcome</div>
+        <ul><li>Identify security vulnerabilities</li>
+<li>Apply ethical hacking techniques</li>
+<li>Implement security best practices</li></ul>
+        <p class="application">High-demand roles as Security Analysts across IT, banking, and enterprise sectors.</p>
+        <div class="course-card-foot">
+          <div class="course-price">Rs. 7,999<span>per student</span></div>
+          <a class="btn btn-ghost btn-sm-link" href="{{ url_for('contact') }}" style="font-size:12.5px;padding:8px 14px;">Enquire</a>
+        </div>
+      </div>
+      <div class="course-card">
+        <div class="course-card-top">
+          <h4>UI/UX Design</h4>
+          <span class="duration-badge">30 Days</span>
+        </div>
+        <p class="objective">Train students in user-centered design principles for digital products and interfaces.</p>
+        <div class="label">Course Outcome</div>
+        <ul><li>Design wireframes and prototypes</li>
+<li>Apply usability design principles</li>
+<li>Use design tools such as Figma</li></ul>
+        <p class="application">Careers as UI/UX Designers across product companies, startups, and design agencies.</p>
+        <div class="course-card-foot">
+          <div class="course-price">Rs. 7,999<span>per student</span></div>
+          <a class="btn btn-ghost btn-sm-link" href="{{ url_for('contact') }}" style="font-size:12.5px;padding:8px 14px;">Enquire</a>
+        </div>
+      </div>
+      <div class="course-card">
+        <div class="course-card-top">
+          <h4>Cloud Computing</h4>
+          <span class="duration-badge">30 Days</span>
+        </div>
+        <p class="objective">Build skills in deploying, managing, and scaling applications on cloud platforms.</p>
+        <div class="label">Course Outcome</div>
+        <ul><li>Deploy applications on AWS/Azure</li>
+<li>Manage cloud infrastructure</li>
+<li>Apply cloud security best practices</li></ul>
+        <p class="application">Essential skillset for DevOps, Cloud Engineer, and IT infrastructure roles.</p>
+        <div class="course-card-foot">
+          <div class="course-price">Rs. 7,999<span>per student</span></div>
+          <a class="btn btn-ghost btn-sm-link" href="{{ url_for('contact') }}" style="font-size:12.5px;padding:8px 14px;">Enquire</a>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section-dim">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="eyebrow">Beyond the Course Catalog</p>
+      <h2>Placement &amp; corporate training programs.</h2>
+      <p>Alongside the domain-specific courses above, we run programs built around your institution's or company's specific placement and upskilling needs.</p>
+    </div>
+    <div class="program-grid reveal-stag">
+      <div class="program-card">
+        <h4>Placement Training Program</h4>
+        <p>Our core placement-readiness track covering aptitude, technical rounds, soft skills, and mock interviews &mdash; run as a full pre-placement bootcamp for final-year students.</p>
+        <ul><li>Aptitude</li><li>Technical</li><li>Soft Skills</li><li>Demo Interviews</li></ul>
+        <div class="program-price">Custom pricing &mdash; contact us</div>
+      </div>
+      <div class="program-card">
+        <h4>Salesforce Training</h4>
+        <p>Hands-on Salesforce platform training, one of our most active partnership areas &mdash; from admin fundamentals through to development tracks, depending on batch level.</p>
+        <ul><li>Salesforce Admin</li><li>Platform Basics</li><li>Certification Prep</li></ul>
+        <div class="program-price">Custom pricing &mdash; contact us</div>
+      </div>
+      <div class="program-card">
+        <h4>Customized Corporate Upskilling Programs</h4>
+        <p>Tailored training tracks designed around a specific company's tech stack or skill gaps &mdash; built after a scoping conversation with your team, not off a fixed syllabus.</p>
+        <ul><li>Scoped to your stack</li><li>Flexible duration</li><li>On-site or online</li></ul>
+        <div class="program-price">Custom pricing &mdash; contact us</div>
+      </div>
+      <div class="program-card">
+        <h4>Career Boost Workshops &amp; Webinars</h4>
+        <p>Short-format sessions &mdash; single day to a few days &mdash; on resume building, LinkedIn presence, interview strategy, and industry trend briefings.</p>
+        <ul><li>1&ndash;3 day format</li><li>Webinar or on-campus</li><li>Open to any batch size</li></ul>
+        <div class="program-price">Custom pricing &mdash; contact us</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="cta-band reveal">
+      <div class="cta-band-inner">
+        <p class="eyebrow" style="justify-content:center;">Let's build it together</p>
+        <h2>30+ industry-aligned courses, customizable by duration, department, and batch size.</h2>
+        <p>Tell us your department, student strength, and preferred timeline &mdash; we'll put together a training plan that fits your semester calendar.</p>
+        <div class="hero-ctas">
+          <a class="btn btn-onDark" href="{{ url_for('contact') }}">Enquire Now</a>
+          <a class="btn btn-onDarkGhost" href="tel:+917092423672">Call +91 70924 23672</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% endblock %}

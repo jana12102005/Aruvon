@@ -1,0 +1,94 @@
+{% extends "base.html" %}
+{% block title %}Student Feedback &mdash; Aruvon Learning Solutions{% endblock %}
+{% block description %}Video feedback from students who've completed Aruvon's placement training and skill development programs.{% endblock %}
+{% block content %}
+
+<section class="page-hero">
+  <div class="wrap">
+    <p class="eyebrow">Student Feedback</p>
+    <h1>Hear it from the students themselves.</h1>
+    <p class="lead">Video feedback from students across our placement training and skill development batches — hosted on Google Drive, updated after every batch.</p>
+  </div>
+</section>
+
+<section style="padding-bottom:0;">
+  <div class="wrap">
+    <div class="gdrive-cta reveal">
+      <h2>Watch the full feedback playlist</h2>
+      <p>All student feedback videos are collected in a shared Google Drive folder. Click below to view the complete, up-to-date playlist.</p>
+      <a class="btn btn-onDark" href="https://drive.google.com/drive/folders/REPLACE_WITH_YOUR_FOLDER_ID" target="_blank" rel="noopener">Open Google Drive Folder</a>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="eyebrow">Featured</p>
+      <h2>A few voices from recent batches.</h2>
+      <p>Thumbnails below are placeholders — each will link to its individual video once added.</p>
+    </div>
+    <div class="video-grid reveal-stag">
+      <a class="video-card" href="https://drive.google.com/drive/folders/REPLACE_WITH_YOUR_FOLDER_ID" target="_blank" rel="noopener">
+        <img src="{{ url_for('static', filename='img/feedback/thumb-1.jpg') }}" alt="Feedback from Student Name">
+        <div class="video-card-body">
+          <h4>Student Name</h4>
+          <p>Course / Batch</p>
+        </div>
+      </a>
+      <a class="video-card" href="https://drive.google.com/drive/folders/REPLACE_WITH_YOUR_FOLDER_ID" target="_blank" rel="noopener">
+        <img src="{{ url_for('static', filename='img/feedback/thumb-2.jpg') }}" alt="Feedback from Student Name">
+        <div class="video-card-body">
+          <h4>Student Name</h4>
+          <p>Course / Batch</p>
+        </div>
+      </a>
+      <a class="video-card" href="https://drive.google.com/drive/folders/REPLACE_WITH_YOUR_FOLDER_ID" target="_blank" rel="noopener">
+        <img src="{{ url_for('static', filename='img/feedback/thumb-3.jpg') }}" alt="Feedback from Student Name">
+        <div class="video-card-body">
+          <h4>Student Name</h4>
+          <p>Course / Batch</p>
+        </div>
+      </a>
+      <a class="video-card" href="https://drive.google.com/drive/folders/REPLACE_WITH_YOUR_FOLDER_ID" target="_blank" rel="noopener">
+        <img src="{{ url_for('static', filename='img/feedback/thumb-4.jpg') }}" alt="Feedback from Student Name">
+        <div class="video-card-body">
+          <h4>Student Name</h4>
+          <p>Course / Batch</p>
+        </div>
+      </a>
+      <a class="video-card" href="https://drive.google.com/drive/folders/REPLACE_WITH_YOUR_FOLDER_ID" target="_blank" rel="noopener">
+        <img src="{{ url_for('static', filename='img/feedback/thumb-5.jpg') }}" alt="Feedback from Student Name">
+        <div class="video-card-body">
+          <h4>Student Name</h4>
+          <p>Course / Batch</p>
+        </div>
+      </a>
+      <a class="video-card" href="https://drive.google.com/drive/folders/REPLACE_WITH_YOUR_FOLDER_ID" target="_blank" rel="noopener">
+        <img src="{{ url_for('static', filename='img/feedback/thumb-6.jpg') }}" alt="Feedback from Student Name">
+        <div class="video-card-body">
+          <h4>Student Name</h4>
+          <p>Course / Batch</p>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="section-dim">
+  <div class="wrap">
+    <div class="cta-band" style="background:var(--navy-deep);">
+      <div class="cta-band-inner">
+        <p class="eyebrow" style="justify-content:center;">Ready to start?</p>
+        <h2>Bring this training to your campus.</h2>
+        <p>Get in touch and we'll put together a plan for your department and batch size.</p>
+        <div class="hero-ctas">
+          <a class="btn btn-onDark" href="{{ url_for('contact') }}">Enquire Now</a>
+          <a class="btn btn-onDarkGhost" href="{{ url_for('courses') }}">View Courses</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% endblock %}

@@ -1,0 +1,89 @@
+{% extends "base.html" %}
+{% block title %}Training Experience &mdash; Aruvon Learning Solutions{% endblock %}
+{% block description %}Meet the trainers delivering Aruvon's placement training and skill development programs.{% endblock %}
+{% block content %}
+
+<section class="page-hero">
+  <div class="wrap">
+    <p class="eyebrow">Training Experience</p>
+    <h1>Meet the trainers behind the programs.</h1>
+    <p class="lead">Expert-led sessions across every domain we teach — from bioinformatics to full stack development. Photos and profiles below are placeholders, updated as each batch's trainers are confirmed.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="eyebrow">Our Trainers</p>
+      <h2>Industry practitioners, not just lecturers.</h2>
+    </div>
+    <div class="trainer-grid reveal-stag">
+      <div class="trainer-card">
+        <img src="{{ url_for('static', filename='img/trainers/trainer-1.jpg') }}" alt="Trainer Name">
+        <div class="trainer-card-body">
+          <h4>Trainer Name</h4>
+          <div class="role">Domain / Subject Area</div>
+          <p>Short trainer bio goes here — background, experience, and specialization.</p>
+        </div>
+      </div>
+      <div class="trainer-card">
+        <img src="{{ url_for('static', filename='img/trainers/trainer-2.jpg') }}" alt="Trainer Name">
+        <div class="trainer-card-body">
+          <h4>Trainer Name</h4>
+          <div class="role">Domain / Subject Area</div>
+          <p>Short trainer bio goes here — background, experience, and specialization.</p>
+        </div>
+      </div>
+      <div class="trainer-card">
+        <img src="{{ url_for('static', filename='img/trainers/trainer-3.jpg') }}" alt="Trainer Name">
+        <div class="trainer-card-body">
+          <h4>Trainer Name</h4>
+          <div class="role">Domain / Subject Area</div>
+          <p>Short trainer bio goes here — background, experience, and specialization.</p>
+        </div>
+      </div>
+      <div class="trainer-card">
+        <img src="{{ url_for('static', filename='img/trainers/trainer-4.jpg') }}" alt="Trainer Name">
+        <div class="trainer-card-body">
+          <h4>Trainer Name</h4>
+          <div class="role">Domain / Subject Area</div>
+          <p>Short trainer bio goes here — background, experience, and specialization.</p>
+        </div>
+      </div>
+      <div class="trainer-card">
+        <img src="{{ url_for('static', filename='img/trainers/trainer-5.jpg') }}" alt="Trainer Name">
+        <div class="trainer-card-body">
+          <h4>Trainer Name</h4>
+          <div class="role">Domain / Subject Area</div>
+          <p>Short trainer bio goes here — background, experience, and specialization.</p>
+        </div>
+      </div>
+      <div class="trainer-card">
+        <img src="{{ url_for('static', filename='img/trainers/trainer-6.jpg') }}" alt="Trainer Name">
+        <div class="trainer-card-body">
+          <h4>Trainer Name</h4>
+          <div class="role">Domain / Subject Area</div>
+          <p>Short trainer bio goes here — background, experience, and specialization.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section-dim">
+  <div class="wrap">
+    <div class="cta-band" style="background:var(--navy-deep);">
+      <div class="cta-band-inner">
+        <p class="eyebrow" style="justify-content:center;">See it in action</p>
+        <h2>Want to see how a session runs at your campus?</h2>
+        <p>We're happy to walk you through a sample session plan before you commit to a batch.</p>
+        <div class="hero-ctas">
+          <a class="btn btn-onDark" href="{{ url_for('contact') }}">Enquire Now</a>
+          <a class="btn btn-onDarkGhost" href="{{ url_for('student_feedback') }}">See Student Feedback</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% endblock %}

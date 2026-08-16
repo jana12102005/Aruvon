@@ -1,0 +1,97 @@
+{% extends "base.html" %}
+{% block title %}Aruvon Learning Solutions &mdash; Skill Development &amp; Placement Training{% endblock %}
+{% block description %}Industry-aligned skill development and placement training programs across Biotechnology, Engineering, and Software &mdash; for college placement training partnerships.{% endblock %}
+{% block content %}
+
+<section style="background:radial-gradient(120% 140% at 82% -10%, #123a6b 0%, var(--navy-deep) 45%, #050D22 100%);position:relative;overflow:hidden;padding:92px 0 100px;">
+  <div class="wrap" style="display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center;position:relative;z-index:2;">
+    <div>
+      <p class="eyebrow" style="color:var(--teal-bright);">Skill Development &amp; Placement Training</p>
+      <h1 style="color:#fff;font-size:clamp(32px,4.4vw,54px);font-weight:800;letter-spacing:-.01em;">Industry-aligned programs that make graduates <span style="background:linear-gradient(97deg,var(--teal-bright),#61E8CF 60%, var(--teal-bright));-webkit-background-clip:text;background-clip:text;color:transparent;">placement-ready.</span></h1>
+      <p style="color:rgba(255,255,255,.72);font-size:17px;line-height:1.65;max-width:540px;margin:22px 0 34px;">A course portfolio for college placement training partnerships &mdash; spanning Biotechnology, Engineering &amp; Technology, and Software &amp; IT. Built to bridge academics and employability with real-world, expert-led training.</p>
+      <div class="hero-ctas" style="display:flex;gap:14px;flex-wrap:wrap;margin-bottom:44px;">
+        <a class="btn btn-onDark" href="{{ url_for('courses') }}">Explore Courses</a>
+        <a class="btn btn-onDarkGhost" href="{{ url_for('contact') }}">Enquire Now</a>
+      </div>
+      <div class="stat-row">
+        <div><b>250+</b><span>Students trained across Tamil Nadu</span></div>
+        <div><b>18+</b><span>Courses across 3 domains</span></div>
+        <div><b>15&ndash;45</b><span>Day programs, semester-friendly</span></div>
+      </div>
+    </div>
+    <div style="position:relative;height:420px;display:flex;align-items:center;justify-content:center;">
+      <canvas id="pixelCanvas" style="width:100%;height:100%;display:block;"></canvas>
+    </div>
+  </div>
+</section>
+
+<div class="trust">
+  <div class="wrap">
+    <p>Program domains</p>
+    <div class="trust-chips">
+      <span class="chip">Biosciences &amp; Biotechnology</span>
+      <span class="chip">Engineering &amp; Technology</span>
+      <span class="chip">Software, IT &amp; Digital Skills</span>
+    </div>
+  </div>
+</div>
+
+<section>
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="eyebrow">Who We Are</p>
+      <h2>A skill development &amp; placement training institute.</h2>
+      <p>We bridge academics and employability with real-world learning &mdash; expert trainers, industry-aligned curriculum, and a focus on career readiness and confidence building.</p>
+    </div>
+    <div class="feat-grid reveal-stag">
+      <div class="feat-card"><h3>Expert-led training</h3><p>Every session is run by trainers with real industry experience, not academic theory alone.</p></div>
+      <div class="feat-card"><h3>Industry-aligned curriculum</h3><p>Courses are built around what recruiters actually look for, across three major domains.</p></div>
+      <div class="feat-card"><h3>Career readiness focus</h3><p>Beyond technical skills &mdash; aptitude, communication, and confidence for the interview room.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section-dim">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="eyebrow">Our Core Areas</p>
+      <h2>From placement training to corporate upskilling.</h2>
+    </div>
+    <div class="program-grid reveal-stag">
+      <div class="program-card">
+        <h4>Placement Training</h4>
+        <p>Aptitude, Technical, Soft Skills, and Demo Interviews &mdash; a complete pre-placement readiness track.</p>
+      </div>
+      <div class="program-card">
+        <h4>Salesforce Training</h4>
+        <p>Hands-on Salesforce platform training, one of our most active and expanding partnership areas.</p>
+      </div>
+      <div class="program-card">
+        <h4>Customized Corporate Upskilling Programs</h4>
+        <p>Training tracks tailored to a company's specific tech stack and skill gaps.</p>
+      </div>
+      <div class="program-card">
+        <h4>Career Boost Workshops / Webinars</h4>
+        <p>Short-format sessions on resume building, LinkedIn presence, and interview strategy.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="cta-band reveal">
+      <div class="cta-band-inner">
+        <p class="eyebrow" style="justify-content:center;">Get started</p>
+        <h2>Let's build a placement-ready curriculum together.</h2>
+        <p>30+ industry-aligned courses across Biotechnology, Engineering, and Software &mdash; customizable by duration, department, and student strength.</p>
+        <div class="hero-ctas">
+          <a class="btn btn-onDark" href="{{ url_for('courses') }}">View All Courses</a>
+          <a class="btn btn-onDarkGhost" href="{{ url_for('contact') }}">Enquire Now</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% endblock %}

@@ -1,0 +1,78 @@
+{% extends "base.html" %}
+{% block title %}About Us &mdash; Aruvon Learning Solutions{% endblock %}
+{% block description %}Aruvon Learning Solutions is a skill development and placement training institute bridging academics and employability across Tamil Nadu.{% endblock %}
+{% block content %}
+
+<section class="page-hero">
+  <div class="wrap">
+    <p class="eyebrow">About Aruvon</p>
+    <h1>Bridging academics and employability with real-world learning.</h1>
+    <p class="lead">Aruvon Learning Solutions is a skill development and placement training institute working directly with colleges to make students placement-ready &mdash; through expert trainers, industry-aligned curriculum, and a focus on career readiness.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="eyebrow">Our Journey So Far</p>
+      <h2>Growing across Tamil Nadu, one batch at a time.</h2>
+    </div>
+    <div class="prose reveal">
+      <ul>
+        <li>Started with a vision to empower students with real-world skills</li>
+        <li>Successfully trained 250+ students across Tamil Nadu</li>
+        <li>Delivered sessions on Aptitude, Communication, and Industry Tools (like Salesforce, ROS 2, and more)</li>
+        <li>Partnered with Engineering and Arts colleges for workshops</li>
+        <li>Expanding Salesforce partnerships and skill initiatives</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="section-dim">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="eyebrow">Why Partner With Us</p>
+      <h2>Four reasons colleges choose Aruvon.</h2>
+    </div>
+    <div class="pillars-grid reveal-stag">
+      <div class="pillar-card"><span class="pillar-idx">01</span><h4>Industry-Ready Curriculum</h4><p>Every course is built around current recruiter and industry expectations, not just academic theory.</p></div>
+      <div class="pillar-card"><span class="pillar-idx">02</span><h4>Multi-Domain Coverage</h4><p>Programs spanning Pharmacy, Biotechnology, Engineering, and Software so every department is served.</p></div>
+      <div class="pillar-card"><span class="pillar-idx">03</span><h4>Outcome-Driven Training</h4><p>Each course maps to clear, measurable learning outcomes that translate into placement readiness.</p></div>
+      <div class="pillar-card"><span class="pillar-idx">04</span><h4>Flexible Engagement</h4><p>Programs from 15 to 45 days that fit within academic calendars and semester schedules.</p></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="eyebrow">Our Core Areas</p>
+      <h2>What we deliver, beyond individual courses.</h2>
+    </div>
+    <div class="program-grid reveal-stag">
+      <div class="feat-card" style="border:1px solid var(--line);border-radius:14px;"><h3>Placement Training</h3><p>Aptitude, Technical, Soft Skills, and Demo Interviews.</p></div>
+      <div class="feat-card" style="border:1px solid var(--line);border-radius:14px;"><h3>Salesforce Training</h3><p>Hands-on platform training across admin and development tracks.</p></div>
+      <div class="feat-card" style="border:1px solid var(--line);border-radius:14px;"><h3>Corporate Upskilling</h3><p>Customized programs scoped to a company's specific stack and skill gaps.</p></div>
+      <div class="feat-card" style="border:1px solid var(--line);border-radius:14px;"><h3>Career Boost Workshops</h3><p>Webinars and short-format sessions on resumes, LinkedIn, and interview strategy.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section-dim">
+  <div class="wrap">
+    <div class="cta-band" style="background:var(--navy-deep);">
+      <div class="cta-band-inner">
+        <p class="eyebrow" style="justify-content:center;">Talk to us</p>
+        <h2>Want to see how this fits your institution?</h2>
+        <p>We'll walk you through the course portfolio and put together a plan around your department and timeline.</p>
+        <div class="hero-ctas">
+          <a class="btn btn-onDark" href="{{ url_for('contact') }}">Enquire Now</a>
+          <a class="btn btn-onDarkGhost" href="{{ url_for('courses') }}">View Courses</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% endblock %}

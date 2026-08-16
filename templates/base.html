@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{% block title %}Aruvon Learning Solutions{% endblock %}</title>
+<meta name="description" content="{% block description %}Skill development and placement training institute in Coimbatore, Tamil Nadu.{% endblock %}">
+<link rel="icon" href="{{ url_for('static', filename='img/logo-icon.png') }}">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+{% include "partials/nav.html" %}
+
+{% block content %}{% endblock %}
+
+{% include "partials/footer.html" %}
+<script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>
